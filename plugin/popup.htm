@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>i2Clipart.com - Royalty Free Public Domain Cliparts</title>
+    <link   type="text/css" rel="stylesheet" media="screen" href="../../../../wp-content/plugins/i2clipart/plugin/css/popup.css" />
+    <script type="text/javascript" src="../../../../wp-includes/js/tinymce/tiny_mce_popup.js"></script>
+    <script type="text/javascript" src="js/popup.js"></script>        
+    <!--[if IE]><style>.toolbar{padding:0 0 5px 20px;}</style><![endif]-->
+  </head>
+  <body>
+      
+    <form onsubmit="i2clipartDialog.search();return false;" action="#">
+      <div class="toolbar">
+        <div style="float:left; padding-top:6px;border:0;"><a id="logo" href='javascript:void(0)' onclick="color_swatch();"><img src="../../../../wp-content/plugins/i2clipart/plugin/img/logo.png" width="140" height="30" /></a></div>
+        <div style="text-align:center;">
+          <form action="" method="post" enctype="multipart/form-data">
+            <input type="text"   class="ctextbox" id="search_box_id" name="searchQuery" placeholder="e.g., heart, ball, bird, car, flower" />
+            <input type="submit" class="cbtn" value="Search" onclick="init_search(); i2clipartDialog.search();" />
+            <input type="button" class="cbtn" value="Home"  onclick="color_swatch();" />
+          </form>
+        </div>
+        <div class="clearfix"></div>
+      </div>        
+    </form>
+
+    <div id='results'></div>
+    <div id='wait'>&nbsp;</div>
+
+    <script>frontPage()</script>
+
+    <div class="foot">
+      <a target='blank' href="http://www.i2clipart.com/terms">DISCLAIMER</a> Images on i2clipart.com are believed to be in the public domain (PD). Images are collected from sources that place them in PD or are uploaded by our users in PD. Images are provided with absolutely no warranty. Use according to your country or jurisdiction. Please <a target='blank' href="http://www.i2clipart.com/dmca">Report</a> any image you may think it is copyrighted.
+    </div>
+  </body>
+</html>
